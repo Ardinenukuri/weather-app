@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import axios from 'axios';
 import WeatherService from '../services/WeatherService';
 import { WeatherData } from '../types/Weather';
+import '/public/styles.css';
 
 // Lazy load WeatherDisplay and WeatherGraph
 const WeatherDisplay = lazy(() => import('./WeatherDisplay'));

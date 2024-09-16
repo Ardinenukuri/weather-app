@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #007bff;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather Container */
+.weatherContainer {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.weatherContainer:hover {
+  transform: translateY(-10px);
+}
+
+.weatherContainer h2 {
+  color: #007bff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.weatherContainer p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Input Fields for Future Integration */
+input[type="text"] {
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 2.2rem;
+  }
+  .weatherContainer {
+      padding: 30px 20px;
+  }
+  .weatherContainer h2 {
+      font-size: 1.8rem;
+  }
+}
